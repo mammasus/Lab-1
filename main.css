@@ -58,7 +58,8 @@ nav a:visited, .name a:visited, .nav_footer a:visited{
     color:#551a8b;
 }
 .social_icons a:visited{
-    color:#2f074b;
+    background: #2f074b;
+    color: white;
 }
 nav a:hover{
     color:blueviolet;
