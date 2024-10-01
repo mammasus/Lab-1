@@ -53,8 +53,12 @@ nav a{
     transition: text-decoration 0.6s ease;
    
 }
-nav a:visited{
-    color:red;
+/*color of the links after there were visited*/
+nav a:visited, .name a:visited, .nav_footer a:visited{
+    color:#551a8b;
+}
+.social_icons a:visited{
+    color:#2f074b;
 }
 nav a:hover{
     color:blueviolet;
