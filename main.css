@@ -1,48 +1,57 @@
 body{
-    background-color: ivory;
+    background-color: rgb(255, 255, 248);
     box-sizing: border-box;
     margin:0;
     padding: 0;
 }
-h1,h2,h3{
+h1,h2,h3,h4{
     text-align: center;
-    padding:20px;
+    font-family: Futura;
+    color:#2f074b;
 }
+
 header{
     background-color: rgb(255, 224, 240);
     display: flex;
-    height:100px;
+    height:120px;
     align-items: center;
 }
+
+ /* logo */
 .name{
-width: 40%;
-padding-left: 5%;
-}
-.name a{
-    font-size: 40px;
-    text-decoration: none;
-}
-.name a:hover{
-    color:blueviolet;
-}
+    width: 40%;
+    padding-left: 5%;
+    font-family: Futura, Arial, Helvetica, sans-serif;
+    }
+    .name a{
+        font-size: 40px;
+        text-decoration: none;
+    }
+    .name a:hover{
+        color:blueviolet;
+    }
+
+ /* menu in header */
 nav{
-width: 60%;
-text-align: end;
-padding-right: 5%;
-font-size: 20px;
-}
+        width: 60%;
+        text-align: end;
+        padding-right: 5%;
+        font-size: 20px;
+        
+        }    
+
 nav ul li{
     display: inline-block;
     padding: 3px;
 }
 nav a{
-    
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
     text-decoration: underline transparent;
     text-underline-offset: 5px;
     text-decoration-thickness: 2px;
     transition: text-decoration 0.6s ease;
    
-    
 }
 nav a:hover{
     color:blueviolet;
@@ -55,57 +64,55 @@ nav a:focus {
     outline:1px solid rgb(233, 122, 140);
   }
 
+
+   /* main part on the mainpage  */
   main p{
     text-align: center;
+    font-family: Cormorant Garamond,sans-serif;
+    font-size: 1.2em;
+  }
+  main h1{
+    padding-top: 30px;
   }
 
-  .main_images img{
-    padding:3px;
-    margin:2px;
-    border:3px solid ivory;
-    box-sizing: border-box;
-    max-width: 100%;
-    vertical-align: middle;
-    height: auto;
+   /* images on the mainpage */
+  .main_images{
     
-
-}
-
-
-
-.main_images{
-    margin-right: auto;
-    margin-left: auto;
     margin-top: 30px;
     margin-bottom: 70px;
     width: 100%;
     justify-content:center;
     display: flex;
     flex-wrap: wrap;
-}
-
-article{
-    padding:20px;
-}
-section p{
-    text-align: center;
-    width: 50%;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-section img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    column-gap: 1em;
+    row-gap: 1em;
     
+}
+
+  .main_images img{
+    padding:3px;
+    margin:2px;
+    border:3px solid  rgb(255, 255, 248);
+    box-sizing: border-box;
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+    transition: transform .2s;
    
 }
+
+.main_images img:hover{
+    transform: scale(1.02);
+}
+
+
+
+/*Footer style*/
 footer{
     background-color: rgb(255, 224, 240);
+    font-family: Montserrat, sans-serif;
    
 }
-
 
 .nav_footer{
    
@@ -119,23 +126,22 @@ footer{
         
     }
 
-    .nav_footer ul{
+.nav_footer ul{
         
         padding:0;
     }
-    .nav_footer a{
+.nav_footer a{
         text-decoration: none;
+        
     }
-    .nav_footer a:hover{
+.nav_footer a:hover{
         color:blueviolet;
     }
-    .nav_footer a:focus {
+.nav_footer a:focus {
         background-color: rgb(245, 204, 222);
         
       }
     
-
-
 
 
 /* Style all font awesome icons */
@@ -172,61 +178,199 @@ footer{
   }
 
 
+/*Contact site*/
 
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text],input[type=email], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-    background-color: #aa0478;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-    background-color: #f19fe0;
-  }
-  
-  /* Add a background color and some padding around the form */
-  .contactform {
+ /* contactform style */
+ .contactform {
     border-radius: 5px;
     background-color: rgb(255, 224, 240);
     padding: 20px;
     width: 40%;
     margin:auto;
     margin-bottom: 50px;
+    font-family: Cormorant Garamond,sans-serif;
+  }
+/* Style inputs*/
+input[type=text],input[type=email], select, textarea {
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #fefff9;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+   
+}
+  
+  /* Style the submit button and also buttons from aboutme site*/
+  input[type=submit],.project a {
+    background-color: #aa0478;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+   
+
+  }
+  
+  /* Hovereffect on buttons */
+  input[type=submit]:hover, .project a:hover {
+    opacity: 0.7;
+    
+  }
+  
+
+
+ /* Aboutme page */
+article{
+    padding:20px;
+    width: 60%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+article p{
+    color:#0e0217;
+    font-size: 1.2em;
+    padding:5px 0px 15px 0px;
+    font-family: Cormorant Garamond,sans-serif;
+
+}
+article h1{
+    font-size: 30px;
+
+}
+section:not(:first-child){
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid rgb(239, 228, 255);
+}
+section img{
+    max-width: 525px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    transition: transform .2s;
+    border-radius: 2px;
+    padding-bottom: 10px;
+   
+}
+section img:hover{
+    transform: scale(1.02);
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
   }
 
+.skills{
+    
+    background: rgb(243, 232, 251);
+    margin: 20px 0;
+    padding: 15px 15px 50px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
-  
+}
 
-  
-  
- 
+.skill {
+    margin: 10px 60px 35px 60px;
+}
+
+.skill h3{
+    color:#aa0478;
+}
+
+.progress-bar {
+   
+    height: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #36033b, #b30071);
+}
 
 
+
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+
+
+.timeline-date {
+    font-weight: bold;
+    font-size: 25px;
+    color: #ff00e1;
+}
+
+.timeline-content {
+    background: rgb(247, 228, 238);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.project {
+    background: rgb(243, 232, 251);
+    margin: 20px 0;
+    padding: 15px 15px 50px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/*Responsitivity*/
+
+@media(max-width:1000px){
+.contactform{
+    width:60%;
+    }
+
+}
 
   @media(max-width:768px){
 
+    nav{
+        font-size:15px;
+    }
+    .name a{
+        font-size:30px;
+    }
+
+    article{
+        width: 80%;
+    }
+    header{
+       flex-direction: column;
+       min-height: fit-content;
+       padding-top:30px;
+       
+    }
+    .name, nav{
+        
+        text-align: center;
+        padding:0;
+        width:100%;
+    }
+    nav ul{
+        padding:0;
+    }
+    main p{
+        padding:25px;
+    }
+
+
+    .contactform{
+        width:70%;
+    }
   }
 
 
            
 
-          
- 

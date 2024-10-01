@@ -6,6 +6,11 @@
     <title>Zuzanna Knapik - about me</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -19,25 +24,86 @@
         </nav>
     </header>
     <article>
-        <section class="about">
-            <h2>About me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel sapien nec ex fermentum rhoncus id ut metus. Aliquam a nisi neque. Phasellus bibendum lorem justo. In eu purus mauris. Quisque at tempus turpis. Nam id ex a risus finibus dapibus. Aenean sollicitudin condimentum dolor, at hendrerit arcu malesuada tempus.</p>
-            <img src="https://placehold.co/300x200" alt="placeholder"/>
+
+        <section class="aboutme_section">
+            <h1>About me</h1>
+            <img src="media/me.jpg" alt="picture of me" class="responsive"/>
+            <p>I’m Zuzanna, a web developer student passionate about creating websites. I started my journey in 2023 and have gained skills in HTML, CSS, and JavaScript. I decided  recently to learn more and join few courses at the University.</p>
+            
         </section>
-        <section class="skills">
-            <h2>Skills</h2>
-            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent a egestas dui, ut egestas nibh. Proin id feugiat tellus. Nam pharetra libero eu malesuada molestie. Duis et leo consectetur, ultrices quam nec, pretium tortor. Suspendisse at nunc erat. Nunc dapibus pharetra turpis ac dapibus.</p>
-            <img src="https://placehold.co/300x200" alt="placeholder"/>
+
+
+        <section class="skills_section">
+            <h1>My skills</h1>
+            <div class="skills">
+            
+            
+                <div class="skill">
+                    <h3>HTML</h3>
+                    <div class="progress-bar" style="width: 50%;"></div>
+                </div>
+                <div class="skill">
+                    <h3>CSS</h3>
+                    <div class="progress-bar" style="width: 40%;"></div>
+                </div>
+                <div class="skill">
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar" style="width: 20%;"></div>
+                </div>
+                <img src="media/coding.jpg" alt="screen with code" class="responsive"/>
+            </div> 
         </section>
-        <section class="journey_timeline">
-            <h2>Journey timeline</h2>
-            <p>Aliquam auctor porta pellentesque. Praesent vehicula dui ex. Curabitur sed convallis quam, sed auctor magna. Ut in eros et ante consequat posuere. In mattis, libero quis facilisis pulvinar, arcu ligula luctus ligula, eget accumsan sem enim ut risus. Cras quis convallis felis. Nullam quis dui blandit lectus venenatis varius.</p>
-            <img src="https://placehold.co/300x200" alt="placeholder"/>
+   
+        <section class="journey_section">
+            <h1>Journey timeline</h1>
+            <ul class="timeline">
+                <li>
+                   
+                    <div class="timeline-content">
+                        <h2 class="timeline-date">2023</h2>
+                        <h3>Started Learning HTML & CSS</h3>
+                        <p>Discovered my passion for web development through an online course.</p>
+                        <img src="media/html.jpg" alt="html buttons" class="responsive"/>
+                    </div>
+                </li>
+                <li>
+                    
+                    <div class="timeline-content">
+                        <h2 class="timeline-date">2023</h2>
+                        <h3>Completed First Project</h3>
+                        <p>Built a personal website as my first project, implementing responsive design.</p>
+                        <img src="media/project.jpg" alt="laptop and coffee" class="responsive"/>
+                    </div>
+                </li>
+                <li>
+                    
+                    <div class="timeline-content">
+                        <h2 class="timeline-date">2024</h2>
+                        <h3>Learned JavaScript</h3>
+                        <p>Improved my skills by learning JavaScript and creating interactive websites.</p>
+                        <img src="media/javascript.jpg" alt="javascript scrabbles" class="responsive"/>
+                    </div>
+                </li>
+            </ul>
+            
         </section>
-        <section class="detailed_project_section">
-            <h2>My Projects</h2>
-            <p>Quisque sed tincidunt ante. Donec interdum augue magna, eu viverra felis commodo in. Nunc suscipit lobortis condimentum. Sed fermentum laoreet tellus in commodo. Ut quam turpis, ultrices nec condimentum et, auctor eget dolor. In vestibulum luctus metus vitae scelerisque. Suspendisse vitae nunc et tortor convallis efficitur</p>
-                <img src="https://placehold.co/300x200" alt="placeholder"/>
+        <section class="project_section">
+            <h1>My Projects</h1>
+            <div class="project">
+                <h2>Personal Portfolio Website</h2>
+                <img src="media/devices.png" alt="pic of code" class="responsive"/>
+                <p>This website showcases my skills and projects. Built with HTML, CSS, and JavaScript, it features a responsive design and interactive elements.</p>
+                <p><strong>Languages:</strong> HTML, CSS, JavaScript</p>
+                <a href="https://github.com/yourusername/portfolio" target="_blank">View more</a>
+            </div>
+
+            <div class="project">
+                <h2>Weather Dashboard</h2>
+                <img src="media/cloudspink.jpg" alt="placeholder" class="responsive"/>
+                <p>This app provides real-time weather information using an API. Users can search for any location to get weather updates.</p>
+                <p><strong>Languages:</strong> HTML, CSS, JavaScript, OpenWeather API</p>
+                <a href="https://github.com/yourusername/weather-dashboard" target="_blank">View more</a>
+            </div>
             </section>
     </article>
     <footer>
