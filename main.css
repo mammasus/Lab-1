@@ -6,7 +6,7 @@ body{
 }
 h1,h2,h3,h4{
     text-align: center;
-    font-family: Futura;
+    font-family: Futura,Arial, Helvetica, sans-serif;
     color:#2f074b;
 }
 
@@ -17,19 +17,6 @@ header{
     align-items: center;
 }
 
- /* logo */
-.name{
-    width: 40%;
-    padding-left: 5%;
-    font-family: Futura, Arial, Helvetica, sans-serif;
-    }
-    .name a{
-        font-size: 40px;
-        text-decoration: none;
-    }
-    .name a:hover{
-        color:blueviolet;
-    }
 
  /* menu in header */
 nav{
@@ -72,6 +59,19 @@ nav a:focus {
     outline:1px solid rgb(233, 122, 140);
   }
 
+ /* logo */
+ .name{
+    width: 40%;
+    padding-left: 5%;
+    font-family: Futura, Arial, Helvetica, sans-serif;
+    }
+    .name a{
+        font-size: 40px;
+        text-decoration: none;
+    }
+    .name a:hover{
+        color: blueviolet;
+    }
 
    /* main part on the mainpage  */
   main p{
