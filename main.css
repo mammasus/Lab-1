@@ -34,6 +34,7 @@ nav ul li{
 nav a{
     font-family: Montserrat, sans-serif;
     font-weight: 500;
+    color:#551a8b;
     text-decoration: underline transparent;
     text-underline-offset: 5px;
     text-decoration-thickness: 2px;
@@ -44,6 +45,7 @@ nav a{
 nav a:visited, .name a:visited, .nav_footer a:visited{
     color:#551a8b;
 }
+
 .social_icons a:visited{
     background: #2f074b;
     color: white;
@@ -68,6 +70,7 @@ nav a:focus {
     .name a{
         font-size: 40px;
         text-decoration: none;
+        color:#551a8b;
     }
     .name a:hover{
         color: blueviolet;
@@ -140,6 +143,7 @@ footer{
     }
 .nav_footer a{
         text-decoration: none;
+        color:#551a8b;
         
     }
 .nav_footer a:hover{
